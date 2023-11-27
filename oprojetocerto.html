@@ -1,0 +1,540 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>O amor na vida</title>
+ <title>Hambivita: O AMOR NA VIDA </title>
+  
+  <style>
+
+    body {
+        background-image: url("./medicinatest.jpg");
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        background-color: #F4F7FA;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-image: url("./medicinatest.jpg");
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        color: #333;
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    nav li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .content-section {
+        display: none;
+        padding: 20px;
+    }
+
+    .content-section.active {
+        display: block;
+    }
+
+    .tab {
+      background-image: url("medicinatest.jpgg");
+        color: #fff;
+    }
+
+   /* Estilo padrão para os botões */
+   .tab-link {
+        background-color: #76bbfc; /* Cor de fundo */
+        color: rgb(255, 255, 255); /* Cor do texto */
+        border: none;
+        padding: 10px 20px; /* Espaçamento interno */
+        font-size: 16px; /* Tamanho da fonte */
+        cursor: pointer; /* Cursor do mouse em formato de mão */
+        border-radius: 5px; /* Borda arredondada */
+        transition: background-color 0.3s; /* Efeito de transição suave na cor de fundo */
+    }
+
+    /* Estilize o botão quando o cursor passar por cima (hover) */
+    .tab-link:hover {
+        background-color: #a8e4fd; /* Cor diferente ao passar o cursor */
+    }
+   h2 {
+   text-decoration: none;
+   color: rgb(0, 8, 22);
+   justify-content: center;
+}
+.tabs {
+ display: flex;
+ list-style: none;
+ padding: 0;
+ margin: 0;
+ background-color: #f1f1f1;
+}
+.tab {
+ flex: 1;
+ text-align: center;
+ padding: 10px 0;
+ cursor: pointer;
+ border: 1px solid #ccc;
+ border-bottom: none;
+}
+.tab:last-child {
+ border-right: none;
+}
+.tab-content {
+ display: none;
+ padding: 20px;
+ border: 1px solid #ccc;
+ border-top: none;
+}
+.tab-content.active {
+ display: block;
+}
+    ul {
+     background-color: #ffffff;
+   }
+ 
+   .tab-content {
+      display: none;
+    }
+  </style>
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabContent, tabLinks;
+      
+      tabContent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
+      }
+      
+      tabLinks = document.getElementsByClassName("tab-link");
+      for (i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+      }
+      
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+  
+<style>
+/* Estilos CSS para o exemplo, você pode personalizar como desejar */
+header {
+ background-image: url("medicinatest.jpg");
+   padding: 60px;
+}
+
+
+nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+
+nav li {
+   display: inline-block;
+   margin-right: 10px;
+}
+
+
+nav li a {
+   text-decoration: none;
+   color: #333;
+}
+
+
+.content-section {
+   display: none;
+   padding: 20px;
+}
+
+
+.content-section.active {
+   display: block;
+}
+
+
+.texto-maior {
+   font-size: 24px;
+}
+.popup {
+   display: grid; /* Escondendo o pop-up inicialmente */
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 300px;
+   padding: 20px;
+   background-color: #D1E9FF;
+   border: 1px solid #D1E9FF;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+   z-index: 9999; /* Garantindo que o pop-up fique na frente dos outros elementos */
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<header>
+<!-- logotipo do site  -->
+<h1 class="texto-maior">AMEV: O amor em viver</h1>
+
+
+<!--- menu de navegação -->
+<nav>
+   <ul>
+       <li><a href="#home">Sobre o site</a></li>
+       <li><a href="#Ong">Programa Beneficente</a></li>
+       <li><a href="#Formulario de apoio">Formulário de apoio</a></li>
+       <li><a href="#ajuda">contatos de emergencia</a></li>
+   </ul>
+   <input type="text" placeholder="Pesquisar" class="pesquisar">
+
+  </nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+<div class="content-section" id="home">
+<h2  style="background-color: #D1E9FF;">Home</h2>
+<p style="background-color: #D1E9FF;">Bem-vindo à página do Amev Esse site, criado pela fundadora Rayana Rizzi serve como ajuda principalmente para podermos indentificar uma doença mais facilmente, com a ajuda de também tratamentos, mas sempre visando a importancia de um diagnóstico médico! </p>
+</div>
+
+<div class="content-section" id="Formulario de apoio">
+<h2  style="background-color: #D1E9FF;">Formulário de apoio</h2>
+<p style="background-color: #D1E9FF;">Este formmulário tem como objetivo ajudar as pessoas com os sintomas de determinada doença</p>
+<p style="background-color: #D1E9FF;"><a href="https://forms.gle/tJwHvQhY5FzxCDAT6/">Formulario</a></p>
+</div>
+
+
+
+<div class="content-section" id="Ong">
+<h2 style="background-color: #D1E9FF;"> suporte técnico</h2>
+<p style="background-color: #D1E9FF;">Sites que ajudam com doações, e apoios sociais em pró a sua saude</p>
+  <p style="background-color: #D1E9FF;"><a href="https://doe.msf.org.br/">Medicos sem fronteira</a></p>
+  <p style="background-color: #D1E9FF;"><a href="https://saude.rs.gov.br/">Doação de sangue</a></p>
+  <p style="background-color: #D1E9FF;"><a href="https://amigos.santacasa.org.br/">Projetos de doação da santa casa</a></p>
+</p>
+</div>
+
+<div class="content-section" id="ajuda">
+  <h2  style="background-color: #D1E9FF;">Contato de emergência</h2>
+  <p style="background-color: #D1E9FF;">Contados que possam te ajudar</p>
+  <p style="background-color: #D1E9FF;">Bombeiros: 193</p>
+  <p style="background-color: #D1E9FF;">Samu: 192</p>
+  <p style="background-color: #D1E9FF;">Brigada Militar : 190</p>
+  <p style="background-color: #D1E9FF;">Polícia Rodoviária Estadual: 198</p>
+  <p style="background-color: #D1E9FF;">Polícia Rodoviária Federal: 191</p>
+  </div>
+  
+
+
+
+
+ <script>
+     // JavaScript para mostrar/ocultar conteúdos com base nos links do menu
+     const menuLinks = document.querySelectorAll('nav a');
+     const contentSections = document.querySelectorAll('.content-section');
+
+    const pesquisar = document.querySelector('.pesquisar')
+    pesquisar.addEventListener('change', () => {
+      const texto = document.querySelector('.pesquisar').value
+      console.log(texto)
+    })
+     function showSection(sectionId) {
+         contentSections.forEach(section => {
+             section.classList.remove('active');
+         });
+
+
+         const targetSection = document.getElementById(sectionId);
+         if (targetSection) {
+             targetSection.classList.add('active');
+         }
+     }
+
+
+     menuLinks.forEach(link => {
+         link.addEventListener('click', event => {
+             event.preventDefault();
+             const sectionId = link.getAttribute('href').slice(1);
+             showSection(sectionId);
+         });
+     });
+
+ </script>
+
+
+
+
+
+
+  <h2>Escolha uma ação a seguir</h2>
+  <div class="tab">
+    <button class="tab-link" onclick="openTab(event, 'Doenças auto imune')">Doenças auto imune</button>
+    <button class="tab-link" onclick="openTab(event, 'Outras doenças')">Outras doenças</button>
+    <button class="tab-link" onclick="openTab(event, 'Tratamentos e curas')">Tratamentos e curas</button>
+    <button class="tab-link" onclick="openTab(event, 'Campanhas de apoio')">Campanhas de apoio</button>
+  </div>
+  
+  
+  <div id="Doenças auto imune" class="tab-content">
+   <h3>Doenças auto imune:</h3>
+    <ul>
+      <li>  <img src="Artrite.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+         <th>
+             <p><u>Artrite reumatoide </u>- É uma doença crônica das articulações (juntas). Essa inflamação é provocada por alterações no sistema de defesa do organismo, o chamado sistema imune.</p>
+             <p>O diagnóstico de artrite reumatoide é feito quando pelo menos 4 dos seguintes critérios estão presentes por pelo menos 6 semanas:</p>
+               <p>-rigidez nas articulações no período da manhã, com duração de pelo menos 1 hora</p>
+              <p>-artrite em pelo menos três áreas articulares;</p>
+              <p>-artrite de articulações das mãos, punhos, articulação do meio dos dedos e entre os dedos e a mão;</p>
+              <p>-rtrite simétrica (por exemplo, no punho esquerdo e no direito);</p>
+              <p>-presença de nódulos reumatoides;</p>
+              <p>- presença de Fator Reumatoide no sangue;</p>
+              <p>- alterações radiográficas em mãos e punhos.</p>
+
+<p>O diagnóstico precoce e o início imediato do tratamento são fundamentais para o controle da atividade da doença, prevenção da incapacidade funcional e lesão articular e o retorno ao estilo de vida normal o mais rapidamente possível.</p>
+          </th></li>
+      <li> <img src="glutem.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th> 
+     <th>
+     <p><u>Doença celíaca</u>-  Doença celíaca é uma doença autoimune causada pela intolerância ao glúten, uma proteína encontrada no trigo, aveia, cevada, centeio e seus derivados, como massas, pizzas, bolos, pães, biscoitos, cerveja, uísque, vodka e alguns doces, provocando dificuldade do organismo de absorver os nutrientes dos alimentos, vitaminas, sais minerais e água.</p> 
+     <p> -O diagnóstico é feito por exame clínico com médico especialista, que vai analisar os sintomas. Biópsia do intestino, por meio de endoscopia, exames de sangue e/ou dieta restritiva sem glúten também podem ser requeridos pelo médico.</p> </th></li>
+     
+     
+     <li><img src="esclerose.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>
+         <p><u> Esclerose Múltipla</u>-  A Esclerose Múltipla (EM) é uma doença neurológica crônica caracterizada pela inflamação da mielina, membrana que envolve os neurônios. A inflamação ocorre devido ao sistema imunológico que não reconhece a membrana como parte do organismo, destruindo-a.
+          <p>-Esta condição dificulta a transmissão do impulso nervoso no cérebro e na medula espinhal.</p>
+        <p>-Para diagnosticar a esclerose múltipla, o médico avalia a história clínica do paciente. O profissional também deve solicitar exames de Ressonância Magnética e coleta de líquor.</p>
+        </th></li> 
+
+      <li><img src="insulina.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>
+          <p><u>Diabetes</u>-é uma síndrome metabólica de origem múltipla, decorrente da falta de insulina e/ou da incapacidade e/ou falta de insulina exercer adequadamente seus efeitos, caracterizando altas taxa de açúcar no sangue ( hiperglicemia) de forma permanente. A insulina é produzida pelo pâncreas, sendo responsável pela manutenção do metabolismo (quebra da glicose) para permitir que tenhamos energia para manter o organismo em funcionamento.</p>
+         <p>-Diabetes tipo 1: Em 5 a 10% dos casos de diabetes, correspondem ao tipo 1, no qual o sistema imunológico atacam as células que produzem a insulina. Assim, não há produção suficiente para fazer com que a glicose entre nas células, permanecendo na corrente sanguínea, ocasionando aumento nas taxas de glicemia.</p>
+          <p>-Diabetes tipo 2: Costuma ser assintomática, e as manifestações ocorrem geralmente na idade adulta (após os 40 anos) com evolução lenta dos sintomas e possibilidade de complicações tardias (renais, oftalmológicas e neuropáticas). Ocorre principalmente em pessoas com excesso de peso, comportamento sedentário, hábitos alimentares não saudáveis e história familiar de diabetes.</p> 
+        <p>-Pré-Diabetes: Pré-diabetes é quando os níveis de glicose no sangue estão mais altos do que o normal, mas ainda não caracterizam o Diabetes Tipo 2. É um sinal de alerta do corpo, que normalmente aparece em pessoas com fatores de risco, como sobrepeso, obesidade, hipertensão e alterações nos lipídios. Nesta etapa, apesar de 50% dos usuários desenvolverem a doença, os outros 50%, por meio de incorporação de hábitos saudáveis na alimentação e prática de atividade física, poderão retardar a evolução e complicações do diabetes.</p></th></li> 
+        
+        <li><img src="Crohn.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>
+          <p><u>Doença de Crohn</u>-A Doença de Crohn é uma doença inflamatória do trato gastrointestinal. Ela afeta predominantemente a parte inferior do intestino delgado (íleo) e intestino grosso (cólon), mas pode afetar qualquer parte do trato gastrointestinal.</p>
+           <p>-A doença de Crohn é crônica. Não sabemos qual é a sua causa. Os medicamentos disponíveis atualmente reduzem a inflamação e habitualmente controlam os sintomas, mas não curam a doença</p>
+         <p>-O ideal é procurar ajuda especializada principalmente diante de quadros de diarreia persistente (sobretudo se o problema se mantém por 7 dias ou mais), caso haja a presença de sangue nas fezes ou em caso de dores abdominais recorrentes.</p>
+         </th></li> 
+         
+         <li><img src="lupus.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>
+          <p><u>Lúpus</u>-É uma doença inflamatória autoimune, que pode afetar múltiplos órgãos e tecidos, como pele, articulações, rins e cérebro. Em casos mais graves, se não tratada adequadamente, pode matar. </p>
+           <p>-Lúpus Discoide: esse tipo de lúpus fica limitado à pele da pessoa. Pode ser identificado com o surgimento de lesões avermelhadas com tamanhos, formatos e colorações específicas na pele, especialmente no rosto, na nuca e/ou no coro cabeludo.</p>
+           <p>-Lúpus Sistêmico: esse tipo de lúpus é o mais comum e pode ser leve ou grave, conforme cada situação. Nessa forma da doença, a inflamação acontece em todo o organismo da pessoa, o que compremete vários órgãos ou sistemas, além da pele, como rins, coração, pulmões, sangue e articulações. </p>
+           <p>-Lúpus induzido por drogas: essa forma do lúpus também é comum e acontece porque substância de algumas drogas e/ou medicamentos podem provocar inflamação com sintomas parecidos com o lúpus sistêmico.</p>
+           <p>-Lúpus neonatal: esse tipo de lúpus é bastante raro e afeta filhos recém-nascidos de mulheres que têm lúpus. Normalmente, ao nascer, a criança pode ter erupções na pele, problemas no fígado ou baixa contagem de células sanguíneas, mas esses sintomas tendem a desaparecer naturalmente após alguns meses.</p>
+         </th></li> 
+        </li>
+     </ul>
+   
+   </div>
+  
+
+  
+         
+  </div>
+  
+  <div id="Outras doenças" class="tab-content">
+    <h3>Outras doenças:</h3>
+    <ul>
+      <li><img src="asma.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+         <th>
+             <p><u>Asma</u>- É é uma das doenças respiratórias crônicas mais comuns, juntamente com a rinite alérgica e a doença pulmonar obstrutiva crônica. As principais características dessa doença pulmonar são dificuldade de respirar, chiado e aperto no peito, respiração curta e rápida.</p>
+              <p>-Pela história que o paciente conta para o médico e por observações feitas durante o exame clínico, tais como: chiado, tórax exageradamente cheio de ar, presença de rinite alérgica (espirros repetidos, nariz escorrendo, entupimento e coceira do nariz, que pode ser intensa) e existência de familiares com doenças alérgicas e asma. Exames para alergia e provas de função respiratória auxiliam no diagnóstico.</p>
+             <p>A asma pode ser causada por vários fatores, como:</p>
+              <p>-alergia: poeira, ácaro, mofo, pólen, fezes de barata, pêlos de animais;</p>
+              <p>-infecções: viroses, como gripes e resfriados, ou ainda as sinusites;
+                <p>-mudanças de tempo;</p>
+                <p>-fumaças;</p>
+                <p>-poluição;</p>
+                <p>-cheiros fortes;</p>
+                <p>-esforço físico;</p>
+                <p>-aspectos emocionais;</p>
+                <p>-exposição ao ar frio;</p>
+          </th></li>
+      <li><img src="cammisin.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+         <th>
+             <p><u>Doenças Sexualmente Transmissíveis (DST)</u>-são causadas por vários tipos de agentes. São transmitidas, principalmente, por contato sexual sem o uso de camisinha, com uma pessoa que esteja infectada e, geralmente, se manifestam por meio de feridas, corrimentos, bolhas ou verrugas.Algumas DST são de fácil tratamento e de rápida resolução. Outras, contudo, têm tratamento mais difícil ou podem persistir ativas, apesar da sensação de melhora relatada pelos pacientes. As mulheres, em especial, devem ser bastante cuidadosas, já que, em diversos casos de DST, não é fácil distinguir os sintomas das reações orgânicas comuns de seu organismo. Isso exige da mulher consultas periódicas ao médico. Algumas DST, quando não diagnosticadas e tratadas a tempo, podem evoluir para complicações graves e até a morte. Algumas DST também podem ser transmitidas da mãe infectada para o bebê durante a gravidez ou durante o parto. Podem provocar, assim, a interrupção espontânea da gravidez ou causar graves lesões ao feto, outras podem também ser transmitidas por transfusão de sangue contaminado ou compartilhamento de seringas e agulhas, principalmente no uso de drogas injetáveis.</p>
+              <p>Tipos de DST:</p>
+              <p>-Aids: causada pela infecção do organismo humano pelo HIV (vírus da imunodeficiência adquirida). O HIV compromete o funcionamento do sistema imunológico humano, impedindo-o de executar adequadamente sua função de proteger o organismo contra as agressões externas, tais como: bactérias, outros vírus, parasitas e células cancerígenas;</p>
+              <p>-Cancro mole: também chamada de cancro venéreo, popularmente é conhecida como cavalo. Manifesta-se através de feridas dolorosas com base mole;</p>
+              <p>-Gonorréia: é a mais comum das DST. Também é conhecida pelo nome de blenorragia, pingadeira, esquentamento. Nas mulheres, essa doença atinge principalmente o colo do útero;</p>
+              <p>-Herpes: manifesta-se através de pequenas bolhas localizadas principalmente na parte externa da vagina e na ponta do pênis. Essas bolhas podem arder e causam coceira intensa. Ao se coçar, a pessoa pode romper a bolha, causando uma ferida;</p>
+              <p>-Linfogranuloma venéreo: caracteriza-se pelo aparecimento de uma lesão genital de curta duração (de três a cinco dias), que se apresenta como uma ferida ou como uma elevação da pele. </p>
+              <p>-Sífilis: manifesta-se inicialmente como uma pequena ferida nos órgãos sexuais (cancro duro) e com ínguas (caroços) nas virilhas. A ferida e as ínguas não doem, não coçam, não ardem e não apresentam pus. Após um certo tempo, a ferida desaparece sem deixar cicatriz, dando à pessoa a falsa impressão de estar curada. Se a doença não for tratada, continua a avançar no organismo, surgindo manchas em várias partes do corpo ;</p>
+              <p>Tricomoníase: os sintomas são, principalmente, corrimento amarelo-esverdeado, com mau cheiro, dor durante o ato sexual, ardor, dificuldade para urinar e coceira nos órgãos sexuais. Na mulher, a doença pode também se localizar em partes internas do corpo, como o colo do útero. A maioria dos homens não apresenta sintomas. Quando isso ocorre, consiste em uma irritação na ponta do pênis.</p>
+              <p>-Condiloma acuminado ou HPV: é uma lesão na região genital, causada pelo Papilomavirus Humano (HPV). A doença é também conhecida como crista de galo, figueira ou cavalo de crista;</p>
+             
+          </th></li>
+      <li><img src="catapora.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+         <th>
+            <p><u>Catapora</u>-A Catapora (varicela) é uma doença infecciosa, altamente contagiosa, mas geralmente benigna, causada pelo vírus Varicela-Zoster, que se manifesta com maior frequência em crianças e com incidência no fim do inverno e início da primavera. A principal característica clínica é o polimorfismo das lesões cutâneas (na pele) que se apresentam nas diversas formas evolutivas (máculas, pápulas, vesículas, pústulas e crostas), acompanhadas de prurido (coceira).A Catapora (varicela) é uma doença infecciosa, altamente contagiosa, mas geralmente benigna, causada pelo vírus Varicela-Zoster, que se manifesta com maior frequência em crianças e com incidência no fim do inverno e início da primavera. A principal característica clínica é o polimorfismo das lesões cutâneas (na pele) que se apresentam nas diversas formas evolutivas (máculas, pápulas, vesículas, pústulas e crostas), acompanhadas de prurido (coceira).</p>
+            <p>- A catapora é facilmente transmitida para outras pessoas. O contágio acontece por meio do contato com o líquido da bolha ou pela tosse, espirro, saliva ou por objetos contaminados pelo vírus, ou seja, contato direto ou de secreções respiratórias. Indiretamente, é transmitida por meio de objetos contaminados com secreções de vesículas e membranas mucosas de pacientes infectados.  Raramente, a catapora (varicela) é transmitida por meio de contato com lesões de pele. O período de incubação do vírus Varicela, causador da Catapora, é de 4 a 16 dias. A transmissão se dá entre 1 a 2 dias antes do aparecimento das lesões de pele e até 6 dias depois, quando todas as lesões estiverem na fase de crostas.</p>
+            <p>-As principais complicações da catapora, nos casos severos ou tratados inadequadamente, são:</p>
+              <p>-encefalite;</p>
+              <p>-pneumonia;</p>
+              <p>-infecções na pele e ouvido.</p>
+          </th></li>
+          <li><img src="Poliomelite.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+            <th>
+                <p><u>Poliomelite</u>- A Poliomielite, também chamada de pólio ou paralisia infantil, é uma doença contagiosa aguda causada pelo poliovírus, que pode infectar crianças e adultos por meio do contato direto com fezes ou com secreções eliminadas pela boca das pessoas doentes e provocar ou não paralisia. Nos casos graves, em que acontecem as paralisias musculares, os membros inferiores são os mais atingidos.</p>
+                 <p>- Reprodução:Os pinguins são animais ovíparos. O tempo de eclosão do ovo demora em média de 5 a 6 semanas. No período em que se põe o ovo, a busca por alimento é revezada entre o macho e a fêmea para que o ovo não fique sozinho e seja alvo de predadores.</p>
+                <p>-as principais sequelas da poliomielite são:</p>
+                <p>-Problemas e dores nas articulações</p>
+                <p>-Pé torto, conhecido como pé equino, em que a pessoa não consegue andar porque o calcanhar não encosta no chão</p>
+                <p>-Crescimento diferente das pernas, o que faz com que a pessoa manque e incline-se para um lado, causando escoliose</p>
+                <p>-Osteoporose</p>
+                <p> -Paralisia de uma das pernas</p>
+                <p> -Paralisia dos músculos da fala e da deglutição, o que provoca acúmulo de secreções na boca e na garganta</p>
+                <p> -Dificuldade de falar</p>
+                <p> -Atrofia muscular</p>
+                <p>-Hipersensibilidade ao toque</p>
+             </th></li>
+         
+             <li><img src="dengue.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+              <th>
+                  <p><u>Dengue</u>- A dengue é uma doença viral transmitida por mosquitos que nos últimos anos se espalhou rapidamente por todas as regiões da Organização Mundial da Saúde (OMS). O vírus da dengue é transmitido por mosquitos fêmea, principalmente da espécie Aedes aegypti e, em menor proporção, da espécie Aedes albopictus. Esses mosquitos também transmitem chikungunya e zika. A dengue é generalizada ao longo dos trópicos, com variações locais de risco influenciadas pela precipitação, temperatura e rápida urbanização não planejada. Nas Américas, o principal vetor da dengue é o mosquito</p>
+                   <p>-A doença é transmitida pela picada da fêmea do mosquito Aedes aegypti. Não há transmissão pelo contato direto com um doente ou suas secreções, nem por meio de fontes de água ou alimento.</p>
+                 <p>-A melhor forma de se evitar a dengue é combater os focos de acúmulo de água, locais propícios para a criação do mosquito transmissor da doença. Para isso, é importante não acumular água em latas, embalagens, copos plásticos, tampinhas de refrigerantes, pneus velhos, vasinhos de plantas, jarros de flores, garrafas, caixas de água, tambores, latões, cisternas, sacos plásticos e lixeiras, entre outros.</p>
+               </th></li>
+               
+             <li><img src="Raiva.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+              <th>
+                  <p><u>Raiva</u>- A raiva é uma doença infecciosa viral aguda, que acomete mamíferos, inclusive o homem, e caracteriza-se como uma encefalite progressiva e aguda com letalidade de aproximadamente 100%. É causada pelo Vírus do gênero Lyssavirus, da família Rabhdoviridae.</p>
+                   <p>-A raiva é transmitida ao homem pela saliva de animais infectados, principalmente por meio da mordedura, podendo ser transmitida também pela arranhadura e/ou lambedura desses animais. O período de incubação é variável entre as espécies, desde dias até anos, com uma média de 45 dias no ser humano, podendo ser mais curto em crianças. O período de incubação está relacionado à localização, extensão e profundidade da mordedura, arranhadura, lambedura ou tipo de contato com a saliva do animal infectado; da proximidade da porta de entrada com o cérebro e troncos nervosos; concentração de partículas virais inoculadas e cepa viral. Nos cães e gatos, a eliminação de vírus pela saliva ocorre de 2 a 5 dias antes do aparecimento dos sinais clínicos e persiste durante toda a evolução da doença (período de transmissibilidade). A morte do animal acontece, em média, entre 5 e 7 dias após a apresentação dos sintomas.</p>
+                  <p>-A raiva é uma doença quase sempre fatal, para a qual a melhor medida de prevenção é a vacinação pré ou pós exposição. Quando a profilaxia antirrábica não ocorre e a doença se instala, pode-se utilizar um protocolo de tratamento da raiva humana, baseado na indução de coma profundo, uso de antivirais e outros medicamentos específicos.</p>
+               </th></li>
+
+         
+          <li><img src="tuberculose.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+           <th>
+               <p><u>Tuberculose</u>- A tuberculose é uma doença infecciosa e transmissível que afeta prioritariamente os pulmões, embora possa acometer outros órgãos e/ou sistemas. A doença é causada pelo Mycobacterium tuberculosis ou bacilo de Koch (em homenagem ao Dr. Robert Koch, descobridor da causa da doença).</p>
+                <p>- A transmissão é direta, de pessoa a pessoa, portanto, a aglomeração de pessoas é o principal fator de transmissão. O doente expele, ao falar, espirrar ou tossir, pequenas gotas de saliva que contêm o agente infeccioso e podem ser aspiradas por outro indivíduo contaminando-o. Má alimentação, falta de higiene, tabagismo, alcoolismo, uso de drogas ilíticas ou qualquer outro fator que gere baixa resistência orgânica, também favorece o estabelecimento da doença.</p>
+               <p>-A principal maneira de prevenir a tuberculose é com a vacina BCG (Bacillus Calmette-Guérin), disponível gratuitamente no SUS. Essa vacina deve ser dada às crianças ao nascer, ou, no máximo, até 04 anos, 11 meses e 29 dias de idade e protege contra as formas mais graves da doença, como a tuberculose miliar e a meníngea.</p>
+            </th></li>
+    </ul>
+ </div>
+  </div>
+  
+  <div id="Tratamentos e curas" class="tab-content">
+    <h3>Répteis:</h3>
+    <ul>
+      <li><img src="sus (1).jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+       <th>
+           <p><u>Sistema Único de Saúde (SUS)</u>-  é um dos maiores e mais complexos sistemas de saúde pública do mundo, abrangendo desde o simples atendimento para avaliação da pressão arterial, por meio da Atenção Primária, até o transplante de órgãos, garantindo acesso integral, universal e gratuito para toda a população do país. Com a sua criação, o SUS proporcionou o acesso universal ao sistema público de saúde, sem discriminação. A atenção integral à saúde, e não somente aos cuidados assistenciais, passou a ser um direito de todos os brasileiros, desde a gestação e por toda a vida, com foco na saúde com qualidade de vida, visando a prevenção e a promoção da saúde.</p>
+           <p>-O Sistema Único de Saúde (SUS) é composto pelo Ministério da Saúde, Estados e Municípios, conforme determina a Constituição Federal. Cada ente tem suas co-responsabilidades.</p>
+        </th></li>
+      <li><img src="doação.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+       <th>
+           <p><u>A doação de orgãos</u>- A doação de órgãos é um ato por meio do qual podem ser retirados órgãos ou tecidos de uma pessoa viva ou falecida (doadores) para serem utilizados no tratamento de outras pessoas (receptores), com a finalidade de reestabelecer as funções de um órgão ou tecido doente. A doação é um ato muito importante, pois pode salvar vidas.</p>
+           <p>-De um doador é possível obter vários órgãos e tecidos para realização do transplante. Podem ser doados rins, fígado, coração, pulmões, pâncreas, intestino, córneas, valvas cardíacas, pele, ossos e tendões. Com isso, inúmeras pessoas podem ser beneficiadas com os órgãos e tecidos provenientes de um mesmo doador. Na maioria das vezes, o transplante de órgãos pode ser a única esperança de vida ou a oportunidade de um recomeço para as pessoas que precisam da doação. Todos os anos, milhares de vidas são salvas por meio desse gesto.</p>
+          <p>-É preciso que a população se conscientize da importância do ato de doar órgãos ou tecidos!</p>
+        </th></li>
+        <li><img src="msf.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+          <th>
+              <p><u>Médicos sem fronteira</u>- É uma organização internacional, não governamental e sem fins lucrativos que oferece ajuda médica e humanitária a populações em situações de emergência, em casos como conflitos armados, catástrofes, epidemias, fome e exclusão social. É a maior organização não governamental de ajuda humanitária do mundo, na área da saúde.</p>
+              <p>-MSF proporciona também ações de longo prazo, na ajuda a refugiados, em casos de conflitos prolongados, instabilidade crônica ou após a ocorrência de catástrofes naturais ou provocadas pela ação humana. A organização foi criada com a ideia de que todas as pessoas têm direito a tratamento médico, e que essa necessidade é mais importante do que as fronteiras nacionais (com base na tese do direito de ingerência humanitária).</p>
+          
+           </th></li>
+        
+    </ul>
+  </div>
+
+  <div id="Campanhas de apoio" class="tab-content">
+   <h3>Campanhas de apoio:</h3>
+   <ul>
+     <li><img src="vacinação.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+       <th>
+           <p><u>Vacinação infantil</u>- O Brasil tem uma invejável tradição na vacinação infantil. Foi assim que conseguimos controlar e praticamente erradicar uma série de doenças. Mas agora, infelizmente, estamos vivendo um período de redução na cobertura vacinal.</p>
+           <p>-O Ministério da Saúde promove duas campanhas anuais de vacinação, junto com Secretarias de Saúde de estados, municípios e Distrito Federal. São as campanhas da gripe, realizada no primeiro semestre, antecedendo o período mais frio do ano, e de atualização da Caderneta de Vacinação. Além disso, a cada quatro anos, todas as crianças menores de cinco são também alvo da campanha de vacinação contra sarampo.</p>
+           <p>-Calendário de vacinação infantil:</p>
+           <p>-A primeira dose da vacina contra a hepatite B deve ser administrada na maternidade, nas primeiras 12 horas de vida do recém-nascido. O esquema básico se constitui de 03 (três) doses, com intervalos de 30 dias da primeira para a segunda dose e 180 dias da primeira para a terceira dose.</p>
+           <p>-O esquema de vacinação atual é feito aos 2, 4 e 6 meses de idade com a vacina Tetravalente e dois reforços com a Tríplice Bacteriana (DTP). O primeiro reforço aos 15 meses e o segundo entre 4 e 6 anos.</p>
+           <p>-É possível administar a primeira dose da Vacina Oral de Rotavírus Humano a partir de 1 mês e 15 dias a 3 meses e 7 dias de idade (6 a 14 semanas de vida).</p>
+           <p>-possível administrar a segunda dose da Vacina Oral de Rotavírus Humano a partir de 3 meses e 7 dias a 5 meses e 15 dias de idade (14 a 24 semanas de vida). O intervalo mínimo preconizado entre a primeira e a segunda dose é de 4 semanas.</p>
+           <p>-A vacina contra febre amarela está indicada para crianças a partir dos 09 meses de idade, que residam ou que irão viajar para área endêmica (estados: AP, TO, MA MT, MS, RO, AC, RR, AM, PA, GO e DF), área de transição (alguns municípios dos estados: PI, BA, MG, SP, PR, SC e RS) e área de risco potencial (alguns municípios dos estados BA, ES e MG). Se viajar para áreas de risco, vacinar contra Febre Amarela 10 (dez) dias antes da viagem.</p>
+        </th</li>
+     <li><img src="cance infanfil.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+       <th>
+           <p><u>Cancêr infantil</u>-O câncer é a principal causa de morte de crianças e adolescentes em todo o mundo. A cada ano, mais de 400.000 crianças são diagnosticadas com câncer. Na região das Américas, a estimativa foi de 32.065 novos casos de câncer em 2020 em crianças de 0 a 14 anos; deles, 20.855 casos foram na América Latina e no Caribe.Crianças com câncer que vivem em países de renda baixa e média enfrentam injustiças inaceitáveis ​na detecção precoce, no diagnóstico e no acesso a tratamento de qualidade e a cuidados paliativos. O câncer é a principal causa de morte de crianças e adolescentes em todo o mundo. A cada ano, mais de 400.000 crianças são diagnosticadas com câncer. Na região das Américas, a estimativa foi de 32.065 novos casos de câncer em 2020 em crianças de 0 a 14 anos; deles, 20.855 casos foram na América Latina e no Caribe. Crianças com câncer que vivem em países de renda baixa e média enfrentam injustiças inaceitáveis ​​na detecção precoce, no diagnóstico e no acesso a tratamento de qualidade e a cuidados paliativos. </p>
+           <p>-A Iniciativa Global para o Câncer Infantil da Organização Mundial da Saúde (OMS) visa melhorar os resultados para crianças com câncer em todo o mundo. O objetivo é dar a todas as crianças com câncer a melhor chance de sobreviver, de viver uma vida plena e abundante e de viver e morrer sem sofrimento. Trabalhando além das fronteiras, setores e disciplinas, podemos criar um futuro melhor para as crianças com câncer.</p>
+           <p>-O câncer infantojuvenil corresponde a um grupo de várias doenças que têm em comum a proliferação descontrolada de células anormais e que pode ocorrer em qualquer local do organismo. Diferentemente do câncer do adulto, o câncer infantojuvenil geralmente afeta as células do sistema sanguíneo e os tecidos de sustentação. Por serem predominantemente de natureza embrionária, tumores na criança e no adolescente são constituídos de células indiferenciadas, o que, geralmente, proporciona melhor resposta aos tratamentos atuais.</p>
+           <p>-Os tumores mais frequentes na infância e na adolescência são as leucemias (que afetam os glóbulos brancos), os que atingem o sistema nervoso central e os linfomas (sistema linfático).</th></li>
+            
+          <li><img src="outuvbrorosa.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>
+          <th> <p><u>Outubro rosa </u>-É um esforço sustentado em direção à conscientização sobre o câncer de mama, um movimento que é celebrado anualmente no mundo todo e que tem por finalidade alertar para a importância do diagnóstico precoce. O câncer de mama é uma das doenças mais fatais para mulheres, quando diagnosticado cedo, a probabilidade de cura chega a 95%.</p>
+          <p>é muito importante que as mulheres observem suas mamas sempre que se sentirem confortáveis para tal (seja no banho, no momento da troca de roupa ou em outra situação do cotidiano), sem técnica específica, valorizando a descoberta casual de pequenas alterações mamárias. A maior parte dos cânceres de mama é descoberta no autoexame.</p> 
+         <p> principais fatores de risco:</p>
+         <p>-histórico familiar, principalmente quando algum parente de primeiro grau já teve a doença;</p>
+         <p>-mulheres que tiveram a primeira menstruação precocemente;</p>
+         <p>-mulheres que tiveram a primeira gravidez após os 30 anos;</p>
+         <p>-mulheres que não tiveram filhos e que tiveram menopausa considerada tardia (depois dos 50 anos).</p>
+         <p>*Se durante o autoexame encontrar os seguintes aspectos, consulte um médico o mais breve possível:</p>
+         <p>-nódulos palpáveis na região das mamas e das axilas;</p>
+         <p>região das mamas com aspecto áspero, similar à casca de laranja e alteração na pele que cobre o local onde foi encontrado algum nódulo.</p>
+         </th></li>
+
+
+         <li><img src="junho laranja.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>
+          <th> <p><u>Junho laranja</u>-É considerado o mês da conscientização sobre anemia e leucemia:A campanha do mês de junho dirige-se à informação e prevenção sobre a saúde do sangue. Além de reservar um dia especialmente à importância da transfusão de sangue, o mês também traz em destaque duas das condições mais frequentes relacionadas ao sistema sanguíneo: a anemia e a leucemia.</p>
+          <p>-Os sinais e sintomas da anemia variam de acordo com a intensidade do comprometimento de cada paciente e da doença que está por trás de cada caso. Em geral, uma pessoa “anêmica” pode apresentar um conjunto de sintomas que refletem a baixa quantidade disponível de glóbulos vermelhos na circulação sanguínea, configurando a chamada síndrome anêmica: fadiga, falta de ar aos esforços e/ou em repouso, palpitações, claudicação, sonolência e confusão mental. A hemoglobinopatia mais conhecida é a doença falciforme, que possui a anemia como o principal sinal da doença. Os sinais e sintomas da anemia variam de acordo com a intensidade do comprometimento de cada paciente e da doença que está por trás de cada caso. Em geral, uma pessoa “anêmica” pode apresentar um conjunto de sintomas que refletem a baixa quantidade disponível de glóbulos vermelhos na circulação sanguínea, configurando a chamada síndrome anêmica: fadiga, falta de ar aos esforços e/ou em repouso, palpitações, claudicação, sonolência e confusão mental. A hemoglobinopatia mais conhecida é a doença falciforme, que possui a anemia como o principal sinal da doença. </p> 
+          <p>-A leucemia é o câncer mais frequente em crianças e um dos mais comuns no mundo, com uma estimativa de 10.180 novos casos no Brasil em 2020 (dados do Instituto Nacional de Câncer – INCA). Caracteriza-se como uma doença maligna dos glóbulos brancos, geralmente de origem exata desconhecida. Ela pode ser classificada em relação à velocidade de evolução (aguda ou crônica) e pelo tipo celular predominantemente afetado (linfoide ou mieloide). </p> 
+         </th></li>
+
+         <li><img src="daçãosang.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>
+          <th> <p><u>Doação de sangue</u>-A doação de sangue é um ato altruísta e de solidariedade, que ajuda a salvar muitas vidas. É um gesto de amor ao próximo que pode gerar muitos sorrisos. É importante destacar que não há um substituto para o sangue e sua disponibilidade é essencial em diversas situações. Seu consumo é diário e contínuo, já que a transfusão de sangue é necessária em diversas situações, tais como anemias crônicas, cirurgias de urgência, acidentes que causam hemorragias, complicações da dengue, febre amarela, tratamento de câncer e outras doenças graves</p>
+          <p>Condições básicas para doar:</p>
+          <p>Ter entre 16 e 69 anos de idade (Menor de 18 anos deve apresentar o formulário de autorização e cópia do documento de identidade com foto do pai, mãe ou tutor/guardião. Idosos devem ter realizado pelo menos uma doação de sangue antes dos 61 anos);
+            <p>-Pesar mais de 51 quilos e ter IMC maior ou igual a 18,5 (descontar o vestuário);</p>
+            <p>-Há medicamentos que podem impedir a doação. Confira algumas restrições em nossa lista de impedimentos;</p>
+            <p>-Apresentar documento de identificação oficial com foto (original ou cópia autenticada em cartório), em bom estado de conservação e dentro do prazo de validade. Documentos aceitos: carteira de identidade, carteira de trabalho, certificado de reservista, carteira nacional de habilitação, passaporte, carteira profissional emitida por classe. Também são aceitas as versões digitais dos documentos em aplicativos oficiais: carteira nacional de habilitação digital, registro geral digital e carteiras de classe digital. Não são aceitos crachás funcionais, carteiras estudantis nem certidão de nascimento ou prints de tela e fotos de documentos;</p>
+            <p>-Dormir pelo menos seis horas, com qualidade, na noite anterior à doação;</p>
+            <p>-Não ingerir bebida alcoólica nas 12 horas anteriores à doação;</p>
+            <p>-Não fumar duas horas antes da doação.</p> 
+         
+         </th></li>
+
+        <li><img src="aids.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>
+            <th> <p><u> AIDS</u>-A Campanha Dezembro Vermelho foi instituída no Brasil pela Lei nº 13.504/2017 como forma de gerar mobilização nacional na luta contra o vírus HIV, a Aids e outras ISTs (Infecções Sexualmente Transmissíveis)</p>
+              <p>-O movimento Dezembro Vermelho objetiva, ainda, conscientizar a todos a respeito das Infecções Sexualmente Transmissíveis, doenças causadas por vírus, bactérias ou outros microrganismos, transmitidas, principalmente, por meio do contato sexual (oral, vaginal, anal) sem o uso de preservativo masculino ou feminino, com uma pessoa que esteja infectada.</p>
+              <p>-A aids é a doença causada pela infecção do Vírus da Imunodeficiência Humana (HIV é a sigla em inglês). Esse vírus ataca o sistema imunológico, que é o responsável por defender o organismo de doenças. As células mais atingidas são os linfócitos T CD4+.</p> 
+               <p>*O tratamento das pessoas com IST melhora a qualidade de vida e interrompe a cadeia de transmissão dessas infecções. O atendimento, o diagnóstico e o tratamento são gratuitos nos serviços de saúde do SUS.</p>
+               </th></li>
+   </ul>
+ </div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login e Registro</title>
+    <style>
+        body {
+            
+            font-family:  "Times New Roman", Times, serif;
+            text-align: center;
+            background-image: url("medicinatest.jpg");
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .login-container {
+          
+            width: 400px;
+            padding: 30px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        .button-container button {
+            border: none;
+            background: none;
+            padding: 0;
+            cursor: pointer;
+        }
+        .button-container button:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            font-size: 28px;
+            color: #3498db; /* Azul tecnológico */
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db; /* Azul tecnológico */
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 18px;
+        }
+        input[type="submit"]:hover {
+            background-color: #2980b9; /* Azul mais escuro ao passar o mouse */
+        }
+        .feedback {
+            font-size: 16px;
+            color: #e74c3c; /* Vermelho */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container" id="login-container">
+        <h2>Login</h2>
+        <form">
+            <input type="text" name="username" id="login-username" placeholder="Endereço de E-mail" required>
+            <input type="password" name="password" id="login-password" placeholder="Senha" required>
+            <input type="submit" value="Entrar" class="enviarBtn">
+        </form>
+        <p class="feedback" id="login-feedback">Nome de usuário ou senha incorretos.</p>
+        <div class="button-container">
+            <button type="button" onclick="alternarFormulario()">Criar Conta</button>
+        </div>
+    </div>
+
+    <div class="login-container" id="registro-container" style="display: none;">
+        <h2>Registrar</h2>
+        <form action="seu_script_de_registro.php" method="post" onsubmit="return validarRegistro()">
+            <input type="text" name="name" id="register-name" placeholder="Nome completo" required>
+            <input type="text" name="email" id="register-email" placeholder="Endereço de E-mail" required>
+            <input type="password" name="password" id="register-password" placeholder="Senha" required>
+            <input type="password" name="confirm_password" id="register-confirm_password" placeholder="Confirmar Senha" required>
+            <input type="submit" value="Registrar">
+        </form>
+        <p class="feedback" id="register-feedback"></p>
+        <div class="button-container">
+            <button type="button" onclick="alternarFormulario()">Voltar para o Login</button>
+        </div>
+    </div>
+
+    <script>
+        const enviarBotao = document.querySelector('.enviarBtn')
+        enviarBotao.addEventListener('click', () => {
+            const email = document.querySelector('#login-username').value
+            const senha = document.querySelector('#login-password').value
+            if (email != '' || senha != '') {
+                window.location.href = './oprojetocerto.html'
+            }
+        })
+        
+        function validarRegistro() {
+            var name = document.getElementById("register-name").value;
+            var email = document.getElementById("register-email").value;
+            var password = document.getElementById("register-password").value;
+            var confirm_password = document.getElementById("register-confirm_password").value;
+
+            if (name === "" || email === "" || password === "" || confirm_password === "") {
+                document.getElementById("register-feedback").textContent = "Por favor, preencha todos os campos corretamente.";
+                document.getElementById("register-feedback").style.display = "block";
+                return false;
+            }
+
+            if (password !== confirm_password) {
+                document.getElementById("register-feedback").textContent = "As senhas não coincidem. Por favor, verifique.";
+                document.getElementById("register-feedback").style.display = "block";
+                return false;
+            }
+        }
+
+        function alternarFormulario() {
+            var loginContainer = document.querySelector("#login-container");
+            var registroContainer = document.querySelector("#registro-container");
+
+            if (registroContainer.style.display === "none") {
+                loginContainer.style.display = "none";
+                registroContainer.style.display = "block";
+            } else {
+                loginContainer.style.display = "block";
+                registroContainer.style.display = "none";
+            }
+        }       
+    </script>
+   
+ 
+</body>
+</html>
+

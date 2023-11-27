@@ -1,0 +1,545 @@
+
+   <!DOCTYPE html>
+   <html>
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>O amor nos animais</title>
+    <title>Hambivita: O AMOR NOS ANIMAIS </title>
+    <title>Gripe</title>
+    
+    <script>
+        function mostrarMaisInformacoes() {
+            var maisInformacoes = document.getElementById("Gripe"); // Corrigido para "Gripe"
+            maisInformacoes.style.display = "block";
+        }
+    </script>
+     <style>
+      .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+
+      }
+      
+      .galeria img {
+        width: 300px;
+        height: 200px;
+        margin-bottom: 10px;
+      }
+      body {
+        background-image: url("Fundo.png");
+        font-family: Arial, sans-serif;
+        background-color: #f5d9d9;
+        margin: 0;
+       padding: 0;
+      }
+      h2 {
+      text-decoration: none;
+      color: rgb(82, 65, 45);
+      justify-content: center;
+  }
+  .tabs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f1f1f1;
+  }
+  .tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-bottom: none;
+  }
+  .tab:last-child {
+    border-right: none;
+  }
+  .tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  .tab-content.active {
+    display: block;
+  }
+       ul {
+        background-color: #DCFF93;
+      }
+    
+      .tab-content {
+         display: none;
+       }
+     </style>
+     <script>
+       function openTab(evt, tabName) {
+         var i, tabContent, tabLinks;
+         
+         tabContent = document.getElementsByClassName("tab-content");
+         for (i = 0; i < tabContent.length; i++) {
+           tabContent[i].style.display = "none";
+         }
+         
+         tabLinks = document.getElementsByClassName("tab-link");
+         for (i = 0; i < tabLinks.length; i++) {
+           tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+         }
+         
+         document.getElementById(tabName).style.display = "block";
+         evt.currentTarget.className += " active";
+       }
+     </script>
+     
+ <style>
+  /* Estilos CSS para o exemplo, você pode personalizar como desejar */
+  header {
+      background-color: #DCFF93;
+      padding: 60px;
+  }
+
+
+  nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+
+  nav li {
+      display: inline-block;
+      margin-right: 10px;
+  }
+
+
+  nav li a {
+      text-decoration: none;
+      color: #333;
+  }
+
+
+  .content-section {
+      display: none;
+      padding: 20px;
+  }
+
+
+  .content-section.active {
+      display: block;
+  }
+
+
+  .texto-maior {
+      font-size: 24px;
+  }
+  .popup {
+      display: grid; /* Escondendo o pop-up inicialmente */
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      padding: 20px;
+      background-color: #DCFF93;
+      border: 1px solid #DCFF93;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 9999; /* Garantindo que o pop-up fique na frente dos outros elementos */
+  }
+
+
+
+
+</style>
+
+   </head>
+   <body>
+   
+ <header>
+  <!-- Inclua o logotipo do site aqui -->
+  <h1 class="texto-maior">Hambivita: O AMOR NOS ANIMAIS</h1>
+
+
+  <!-- Exemplo de menu de navegação -->
+  <nav>
+      <ul>
+          <li><a href="#home">Sobre o site</a></li>
+          <li><a href="#Ong">Programa Beneficente</a></li>
+          
+      </ul>
+  </nav>
+  <head>
+    <title>Lupa de pesquisa</title>
+    <style>
+      .lupa {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" name="pesquisa" placeholder="Pesquisar">
+    <img src="imagem-da-lupa.png" alt="Lupa" class="lupa">
+  </body>
+
+</header>
+
+
+
+
+
+
+
+
+<div class="content-section" id="home">
+  <h2>Home</h2>
+  <p>Bem-vindo à página do Hambivita Esse site, criado pela fundadora Rayana Rizzi serve como ajuda com animais  </p>
+</div>
+
+
+
+
+<div class="content-section" id="Ong">
+  <h2> suporte técnico</h2>
+  <p>Para mais informações, e sites para ajudar com doaçõe entre em contato com 
+   <p><a href="http://www.uipa.org.br/">Ong internacional de animais</a></p>
+   <p><a href="https://www.soama.org.br/">Ong de adoção de animais</a></p>
+   <p><a href="https://www.caosemdono.com.br/">Ong de adoção de animais</a></p>
+   <p>Deseja doar algum valor? (54)999999999</p>
+  </p>
+</div>
+
+
+  
+    <script>
+        // JavaScript para mostrar/ocultar conteúdos com base nos links do menu
+        const menuLinks = document.querySelectorAll('nav a');
+        const contentSections = document.querySelectorAll('.content-section');
+
+
+        function showSection(sectionId) {
+            contentSections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+        }
+
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', event => {
+                event.preventDefault();
+                const sectionId = link.getAttribute('href').slice(1);
+                showSection(sectionId);
+            });
+        });
+
+    </script>
+
+
+
+
+
+
+     <h2>Escolha uma classificação de animal:</h2>
+     <div class="tab">
+       <button class="tab-link" onclick="openTab(event, 'mamiferos')">Mamíferos</button>
+       <button class="tab-link" onclick="openTab(event, 'aves')">Aves</button>
+       <button class="tab-link" onclick="openTab(event, 'repteis')">Répteis</button>
+       <button class="tab-link" onclick="openTab(event, 'marinhos')">Marinhos</button>
+     </div>
+     
+     <div id="mamiferos" class="tab-content">
+      <h3>Mamíferos:</h3>
+       <ul>
+         <li>  <img src="pantera-nenem.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+            <th>
+                <p>Onça - <u>Panthera onca </u>-   um dos felinos símbolo do Brasil.A cor da sua pelagem varia entre amarela e castanha e possui várias manchas em formato de roseta.</p>
+                 <p>Habitat: O animal prefere áreas de floresta e ambientes abertos e geralmente não vive acima de 1.200 m de altitude  além disso o animal costuma viver próximo a fontes de água e gosta de nadar.</p>
+                <p>Extinção: O tráfico internacional de onças ou de partes do corpo do animal é um ato proibido, porém lucrativo e uma grande ameaça à sobrevivência da espécie. Na região amazônica e no Pantanal, a população de onças-pintadas tem boas chances de sobreviver e se manter a longo prazo, no entanto , em países como o Estados Unidos o animal já se encontra extinto desde o início do século.</p>
+             </th></li>
+         <li> <img src="Ovelha-bebe.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th> 
+        <th>
+        <p> Ovelha - <u>Ovis aries</u>-   As ovelhas são mamíferos pertencentes à família Bovidae, famosas pela sua pelagem fofa, que dão a elas uma aparência levemente arredondada.Esse animal ruminante está presente na sociedade humana há muitos séculos, sendo domesticadas e usadas para diversos fins, como na produção de lã e no consumo de carne.</p>
+        <p>Habitat: O ancestral da ovelha, chamado mufão-asiático, é originário do oriente médio, mas hoje as ovelhas podem ser encontradas em todos os continentes do planeta devido a sua domesticação e fácil adaptação à diferentes ambientes.</p>
+        <p>Diferença de ovelha e cabras:Devido a algumas semelhanças, a ovelha e a cabra podem ser confundidas. Esses dois animais são da mesma família (Bovidae), mas de espécies diferentes. A cabra é da espécie Capra hircus e a ovelha, da espécie Ovis aries. </p> </th></li>
+         <li><img src="Coala-bebe.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>
+            <p> Coala - <u> Phascolarctos cinereus</u>-  O coala é um animal vertebrado, mamífero e originário da Austrália. É herbívoro, alimenta-se de folhas de eucalipto e passa a maior parte de sua vida sobre as árvores.Eles apresentam uma pelagem com coloração que varia entre o acinzentado e o castanho, podem chegar a cerca de 85 centímetros de comprimento e pesar até cerca de 13 quilos.</p>
+            <p>Predadores: Mesmo vivendo em ambientes com uma incrível variedade de espécies animais, o coala possui poucos predadores a bem da verdade, sendo que o que mais oferece perigo é uma espécie de cão selvagem (o Canis dingo), que mesmo assim só mata coalas que sejam muito velhos, ou que estejam doentes. </p>
+            <p>Habitat:Esse marsupial é encontrado única e exclusivamente na Austrália, e é interessante notar que a depender de onde residam, a sua pelagem pode se adaptar aos pés de eucalipto que ele se alimenta. </p> </th></li> </li>
+         <li><img src="baleia-orca.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>
+             <p> Baleia Orca - <u>Orcinus orca</u>-  Cientificamente, a orca não é uma baleia, mas sim um golfinho. Porém, não é errado citar como "baleia orca", já que golfinhos e baleias pertencem a mesma ordem (Cetácea).</p>
+            <p>Alimentação:A alimentação da orca envolve diversos animais marinhos. Os animais que fazem parte de sua dieta são os tubarões, golfinhos, tartarugas, leões-marinhos e até mesmo outras baleias, principalmente por causa de sua forte arcada dentária. </p>
+             <p>Habitat: As orcas vivem em regiões oceânicas e na maior parte dos mares. São mais comuns em águas frias, como as regiões polares.</p> </th></li> </li>
+        </ul>
+       
+         
+          <button onclick="mostrarMaisInformacoes()">Gripe</button>
+          <div id="Gripe" style="display: none;">
+              <h3>Mais Informações</h3>
+              <p>
+                  <li>  <img src="pantera-nenem.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+                     <th>
+                         <p>Onça - <u>Panthera onca </u> - um dos felinos símbolo do Brasil. A cor da sua pelagem varia entre amarela e castanha e possui várias manchas em formato de roseta.</p>
+                         <p>Habitat: O animal prefere áreas de floresta e ambientes abertos e geralmente não vive acima de 1.200 m de altitude. Além disso, o animal costuma viver próximo a fontes de água e gosta de nadar.</p>
+                         <p>Extinção: O tráfico internacional de onças ou de partes do corpo do animal é um ato proibido, porém lucrativo e uma grande ameaça à sobrevivência da espécie. Na região amazônica e no Pantanal, a população de onças-pintadas tem boas chances de sobreviver e se manter a longo prazo, no entanto, em países como os Estados Unidos, o animal já se encontra extinto desde o início do século.</p>
+                      </th></li></p>
+          </div>
+      
+      </div>
+     
+   
+     
+            
+     </div>
+     
+     <div id="aves" class="tab-content">
+       <h3>Aves:</h3>
+       <ul>
+         <li><img src="periquito-beijando.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+            <th>
+                <p>Periquito - <u>Melopsittacus undulatus</u>-  Lindo e falante, o periquito é muito indicado para primeiro pássaro de uma família. Uma das características mais marcantes do periquito são suas penas pontudas na cauda e suas cores vibrantes, podem medir de 18 cm em diante e, quando bem cuidados e alimentados com uma dieta balanceada, podem viver entre 15 e 20 anos.</p>
+                 <p> Alimentação:Como um animal herbívoro, a dieta de um periquito consiste em grãos, sementes e frutas e vegetais frescos. </p>
+                <p>Atitudes contra o tráfico: A criação e o comércio desse animal precisam ser regulado pelo IBAMA. Por isso, é necessário procurar uma casa de animal ou criador que trabalha com venda de animais autorizados. Além disso, é preciso pedir toda a documentação que consta a autorização para a criação do animal. Também é necessário pedir a nota fiscal para que possa vir a ser solicitada por alguma fiscalização.</p>
+             </th></li>
+         <li><img src="pato.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+            <th>
+                <p> Pato - <u>Ramphastidae</u>-  Patos são aves com hábitos aquáticos, porém, também conseguem andar na terra. São animais que podem ser encontrados em grande parte do mundo, sendo que algumas das espécies de patos costumam emigrar de um território para outro. Ou seja, é capaz de voar por longas distâncias para aproveitar as mais diferentes estações do ano nas diferentes regiões a procura de locais com maior disponibilidade de alimento.</p>
+                 <p> Alimentação:São animais onívoros, cuja alimentação é à base de vegetais, plantas aquáticas, gramíneas, animais aquáticos invertebrados, pequenos peixes, girinos, grãos e sementes.</p>
+                <p>Habitat:São aves que habitam corpos d´água, como margens de rios, lagos, pantanais e áreas alagadas. Poucas espécies, como o pato-do-mato (Cairina moschata), podem ser encontrados em rios próximos à orla do mar.</p>
+             </th></li>
+         <li><img src="Tucano.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+            <th>
+                <p>Tucano - <u>Ramphastidae</u>-  Os tucanos são aves da família Ramphastidae e se destacam pelo seu bico grande, colorido e achatado lateralmente. Dentre todas as aves, os tucanos se destacam por apresentarem um dos maiores bicos em relação ao tamanho corporal.</p>
+                 <p> Alimentação:Não há nada relacionado aos hábitos alimentares desse animal que realmente demande isso.Alguns pesquisadores acreditam que o bico tem um importante papel na escolha de parceiros. Já outros afirmam que o bico consegue regular a temperatura do corpo do Tucano, agindo como um termômetro.</p>
+                <p>Habitat: Essa ave vive especialmente nas regiões tropicais, portanto América do Sul e América Central são seus locais mais comuns. No Brasil estão concentrados em regiões como Mata Atlântica e Pantanal. Também podem ser encontrados em praticamente todo o México.</p>
+             </th></li>
+             <li><img src="Piguim.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+              <th>
+                  <p>Pinguin - <u>Spheniscidae</u>-  Eles possuem as asas curtas, que são resultado de um processo de transformação para sobrevivência na vida aquática. Elas não servem para voos no ar, porém são muito importantes na natação. As asas são utilizadas como nadadeiras. Além disso, as patas possuem membranas que auxiliam na natação.</p>
+                   <p> Reprodução:Os pinguins são animais ovíparos. O tempo de eclosão do ovo demora em média de 5 a 6 semanas. No período em que se põe o ovo, a busca por alimento é revezada entre o macho e a fêmea para que o ovo não fique sozinho e seja alvo de predadores.</p>
+                  <p>Habitat:O pinguim é uma ave marinha da família Spheniscidae que vive principalmente na Antártida. Algumas espécies vivem nas regiões das Ilhas Malvinas e Galápagos</p>
+               </th></li>
+       </ul>
+       <div id="galeria-aves" class="galeria">
+        <img src="pardal domestico.jfif" alt="ave">
+        <img src="arara linda.jpg" alt="ave 2">
+        <img src="picapau.jfif" alt="ave 3">
+        <img src="pavao].png" alt="ave 4">
+        <img src="udu udu.webp" alt="ave 5">
+        <img src="chapeu.jpg" alt="ave 6">
+        <img src="mordecai.jpg" alt="ave 7">
+        <img src="joa do barro.jfif" alt="ave 8">
+        <!-- Adicione mais imagens conforme necessário -->
+      </div>
+    </div>
+     </div>
+     
+     <div id="repteis" class="tab-content">
+       <h3>Répteis:</h3>
+       <ul>
+         <li><img src="tartuga.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+          <th>
+              <p>Tartaruga - <u>Testudines</u>-  Apesar da reputação de movimentos lentos, a tartaruga marinha é uma eterna viajante. Lentas em terra, mas rápidas e ágeis na água, este animal mostra um equilíbrio perfeito entre o início de novas aventuras e a manutenção de um ritmo confortável.</p>
+               <p> importancia:As tartarugas marinhas ajudam a manter as cadeias alimentares saudáveis. As tartarugas-de-escamas alimentam-se de esponjas marinhas que, de outro modo, iam competir com os recifes de corais. Outras tartarugas deleitam-se com canteiros de ervas marinhas, mantendo-os recortados e saudáveis. A tartaruga-de-couro é um dos principais predadores de águas-vivas, que comem larvas de peixes. As tartarugas marinhas são também foco de atividades de ecoturismo em muitos países, representando uma importante fonte de rendimento para as comunidades costeiras.</p>
+              <p>Habitat: As tartarugas marinhas vivem em quase todas as bacias oceânicas do mundo, fazendo os seus ninhos em praias tropicais e subtropicais. Elas viajam pelos mares, em geral milhares de quilómetros, entre os locais de alimentação e de nidificação.</p>
+           </th></li>
+         <li><img src="Cmao.jfif"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+          <th>
+              <p>Camaleão - <u>Testudines</u>-  São animais que vivem sozinhos, juntando-se a outro apenas na época de reprodução. Botam ovos, sendo que o período de incubação pode durar até mesmo um ano. Uma espécie de camaleão (Furcifer labordi) apresenta uma característica interessante a respeito da sua permanência no interior do ovo, ele demora nove meses para eclodir e, depois que nasce, só vive mais cinco meses.</p>
+              <p>Coloração: Eles conseguem mudar de cor graças a camadas de células com pigmentos coloridos chamadas de cromatóforos. Essas células podem ter tons variados que incluem o verde, o vermelho, o rosa, o marrom, o azul, o amarelo e o preto. Os cromatóforos são encontrados logo abaixo à epiderme, que nesses animais é transparente. A mudança de cor ocorre graças a hormônios que são liberados por uma região do encéfalo desse réptil.</p>
+              <p>Habitat: Os camaleões apresentam-se distribuídos principalmente na África, Madagáscar, além do sul da Europa, Arábia, Índia e Sri Lanka. Nesses locais são encontrados habitando regiões de florestas, savanas, bem como plantações. Apresentam hábitos diurnos e passam a maior parte do tempo em cima de árvores, sendo assim, são animais de hábitos arborícolas. Apresentam movimentos lentos, o que os torna presas fáceis de seus predadores.</p>
+           </th></li>
+         <li><img src="dragao.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+          <th>
+              <p>Dragão-de-komodo - <u>Testudines</u>-  É um réptil que ocorre exclusivamente em algumas ilhas da Indonésia. Trata-se de um animal de grande porte, sendo considerado o maior lagarto do planeta. O dragão-de-komodo pode apresentar três metros de comprimento quando adulto e pesar mais de 160 kg.</p>
+              <p>Alimentação: O dragão-de-komodo é uma espécie carnívora que se alimenta, principalmente, de carniça, entretanto, também é capaz de caçar por emboscada. Veados, cavalos, búfalos, cabras e porcos selvagens são alguns dos animais que fazem parte da dieta de um dragão-de-komodo adulto. Os adultos também costumam se alimentar de dragões jovens, e estes se alimentam de pequenos animais, como insetos.</p>
+              <p>Habitat: Dragões-de-komodo são animais encontrados apenas nas ilhas indonésias de Rinca, Padar, Flores e Komodo. Nessas regiões podem ser observados em diferentes ambientes, como savanas, florestas e habitat litorâneo.</p>
+           </th></li>
+           <li><img src="jiji.jfif"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+            <th>
+                <p>Jiboia - <u>Boa constrictor</u>-  As jiboias possuem as manchas corporais mais distintas de todos os répteis. Dependendo do habitat em que vivem, sua coloração pode assumir tons de marrom, verde, vermelho ou amarelo e exibir padrões enigmáticos com linhas irregulares, formas ovais, losangos e círculos.</p>
+                <p>Veneno: Muitas pessoas acreditam que a jiboia é venenosa, há até mesmo uma crença de que ela é venenosa durante alguns meses do ano. No entanto, isso não é verdade, pois as jiboias não apresentam glândulas de veneno, nem dentes inoculadores.</p>
+                <p>Habitat: A jiboia é um animal que não possui um habitat específico, podendo ocupar diversos domínios morfoclimáticos, desde florestas tropicais a regiões semiáridas.</p>
+             </th></li>
+       </ul>
+     </div>
+
+     <div id="marinhos" class="tab-content">
+      <h3>Marinhos:</h3>
+      <ul>
+        <li><img src="estrela do mar no mar.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+          <th>
+              <p>Estrela do Mar - <u>Asteroidea</u>- A estrela-do-mar é um animal equinoderme em forma de estrela pertencente à classe Asteroidea e ao subfilo Asterozoa. Existem cerca de 1.900 espécies de estrela-do-mar no fundo do mar em todos os oceanos do mundo, dos trópicos até as gélidas águas polares.</p>
+              <p>Alimentação: A alimentação das estrelas-do-mar é formada por amêijoas, ostras, pequenos peixes, artrópodes e moluscos gastrópodes. Além disso, elas podem ingerir algas e outras plantas marinhas.</p>
+              <p>Habitat: As estrelas-do-mar ocorrem nos oceanos de todo o mundo, desde as águas quentes dos trópicos até os oceanos polares, sobrevivendo tanto nas zonas de marés de praias quanto em regiões de grande profundidade, consideradas abissais.</p>
+           </th</li>
+        <li><img src="peixe lua gordo e grande.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>   
+          <th>
+              <p>Peixe lua - <u>Mola mola</u>- O peixe-lua é uma espécie de peixe ósseo pertencente à família Molidae. Se destaca por sua morfologia, que o difere dos demais peixes. É o peixe ósseo mais pesado do mundo. Possui a mesma toxina que os baiacus, e não vive bem em cativeiro.</p>
+              <p>Vivência:Embora não seja muito comercializado, existem pessoas que consomem sua carne. No entanto, ela precisa ter um preparo especial, porque possui a mesma toxina que os baiacus, tornando-se venenosa para humanos. Infelizmente, a população de peixe-lua é considerada vulnerável. Muitos peixes morrem porque ficam presos em redes de pesca e também se sufocam com o lixo no mar </p>
+              <p>Habitat: Ele vive em oceanos temperados e tropicais. Por isso, você poderá encontrá-lo no Atlântico, Índico e Pacífico. Apesar de preferir o mar aberto, ele também nada em áreas com corais ou formações de algas para que peixes-limpadores se alimentem de parasitas em sua pele </th></li>
+               
+             <li><img src="agua vivas.jpg"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>
+             <th> <p>Agua viva - <u>Medusozoa</u>- As águas-vivas, ou medusas, são animais marinhos pertencentes ao filo Cnidaria, classe Scyphozoa. O corpo tem a forma de um sino margeado por tentáculos e apresenta uma organização simples, havendo uma cavidade gastrovascular central com uma única abertura que atua como boca e ânus.</p>
+             <p>Locomoção:A locomoção ocorre por contrações do corpo graças às células mioepiteliais ligadas ao sistema nervoso que agem como músculos. Elas também podem ser levadas pelas correntes marítimas.</p> 
+            <p>Alimentação: Muitos indivíduos são predadores e capturam suas presas com seus tentáculos. Estes possuem células, os cnidócitos, que atuam tanto na defesa quanto na caça. A digestão é intra e extracelular, e seu sistema digestório é incompleto, pois possui apenas uma cavidade que atua como boca e ânus.</p>
+            </th></li>
+           <li><img src="leo marinho posudo.png"  style="width: 300px; height: 200px;" alt="gato fofo " /></th>
+               <th> <p>Leão marinho - <u> Otariinae</u>- Leão-marinho é um animal pertencente à família Otariidae e subordem Pinnipedia. Se trata de animais grandes, que podem pesar mais de 300 kg e que passam parte do tempo na água e parte no substrato sólido. Os leões-marinhos possuem pescoços longos, orelhas externas e se locomovem no solo ou gelo utilizando os seus quatro membros.</p>
+                 <p>Habitat: São animais aquáticos, sendo a maior parte marinhos, e possuem para isso diversas adaptações que favorecem a vida e a movimentação dentro d’água. Os membros anteriores e posteriores passaram por pressões seletivas, onde as nadadeiras espalmadas foram os mais adaptados. O corpo hidrodinâmico e a capacidade respiratória ampliada também foram fatores determinantes para o sucesso adaptativo desses animais.
+                     No Brasil, a ocorrência desses animais é bem limitada. Durante o nosso inverno, um grupo de leões-marinhos costuma frequentar a chamada Ilha dos Lobos, na cidade de Torres no Rio Grande do Sul, fugindo do inverno rigoroso da Patagônia. A maioria dos animais que vem para o Brasil são machos e jovens, uma vez que as fêmeas permanecem na Patagônia para cuidar dos filhotes.</p> 
+                  <p>Alimentação:Leões-marinhos são carnívoros, ou seja, se alimentam de outros animais. A principal fonte alimentar dos leões-marinhos são os peixes, crustáceos e moluscos (como lulas e polvos), mas ocasionalmente podem ser alimentar de aves.</p>
+                  </th></li>
+      </ul>
+    </div>
+   </body>
+   </html>
+
+   <!DOCTYPE html>
+<html>
+<head>
+    <title>Login e Registro</title>
+    <style>
+        body {
+            
+            font-family:  "Times New Roman", Times, serif;
+            text-align: center;
+            background-image: url("medicinatest.jpg");
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .login-container {
+          
+            width: 400px;
+            padding: 30px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        .button-container button {
+            border: none;
+            background: none;
+            padding: 0;
+            cursor: pointer;
+        }
+        .button-container button:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            font-size: 28px;
+            color: #3498db; /* Azul tecnológico */
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db; /* Azul tecnológico */
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 18px;
+        }
+        input[type="submit"]:hover {
+            background-color: #2980b9; /* Azul mais escuro ao passar o mouse */
+        }
+        .feedback {
+            font-size: 16px;
+            color: #e74c3c; /* Vermelho */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container" id="login-container">
+        <h2>Login</h2>
+        <form action="seu_script_de_login.php" method="post" onsubmit="return validarLogin()">
+            <input type="text" name="username" id="login-username" placeholder="Endereço de E-mail" required>
+            <input type="password" name="password" id="login-password" placeholder="Senha" required>
+            <input type="submit" value="Entrar">
+        </form>
+        <p class="feedback" id="login-feedback">Nome de usuário ou senha incorretos.</p>
+        <div class="button-container">
+            <button type="button" onclick="alternarFormulario()">Criar Conta</button>
+        </div>
+    </div>
+
+    <div class="login-container" id="registro-container" style="display: none;">
+        <h2>Registrar</h2>
+        <form action="seu_script_de_registro.php" method="post" onsubmit="return validarRegistro()">
+            <input type="text" name="name" id="register-name" placeholder="Nome completo" required>
+            <input type="text" name="email" id="register-email" placeholder="Endereço de E-mail" required>
+            <input type="password" name="password" id="register-password" placeholder="Senha" required>
+            <input type="password" name="confirm_password" id="register-confirm_password" placeholder="Confirmar Senha" required>
+            <input type="submit" value="Registrar">
+        </form>
+        <p class="feedback" id="register-feedback"></p>
+        <div class="button-container">
+            <button type="button" onclick="alternarFormulario()">Voltar para o Login</button>
+        </div>
+    </div>
+
+    <script>
+        function validarLogin() {
+            // Lógica de validação do login
+            // Verifique se o nome de usuário e a senha estão corretos
+        }
+
+        function validarRegistro() {
+            var name = document.getElementById("register-name").value;
+            var email = document.getElementById("register-email").value;
+            var password = document.getElementById("register-password").value;
+            var confirm_password = document.getElementById("register-confirm_password").value;
+
+            if (name === "" || email === "" || password === "" || confirm_password === "") {
+                document.getElementById("register-feedback").textContent = "Por favor, preencha todos os campos corretamente.";
+                document.getElementById("register-feedback").style.display = "block";
+                return false;
+            }
+
+            if (password !== confirm_password) {
+                document.getElementById("register-feedback").textContent = "As senhas não coincidem. Por favor, verifique.";
+                document.getElementById("register-feedback").style.display = "block";
+                return false;
+            }
+        }
+
+        function alternarFormulario() {
+            var loginContainer = document.querySelector("#login-container");
+            var registroContainer = document.querySelector("#registro-container");
+
+            if (registroContainer.style.display === "none") {
+                loginContainer.style.display = "none";
+                registroContainer.style.display = "block";
+            } else {
+                loginContainer.style.display = "block";
+                registroContainer.style.display = "none";
+            }
+        }       
+    </script>
+   
+ 
+</body>
+</html>
